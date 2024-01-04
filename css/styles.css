@@ -1,0 +1,252 @@
+/* primary-color: #092635 
+   secondary-color: #1B4242
+   #5C8374
+   #9EC8B9
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+/**********************************************/
+/* NAVBAR */
+/**********************************************/
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  background-color: #94b399;
+}
+.nav-logo {
+  flex: 1;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.main-nav-links {
+  flex: 5;
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  flex: 4;
+  gap: 4.8rem;
+  justify-content: center;
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  border-bottom: 3px solid #fff;
+}
+
+.social-media {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.social-media-logo {
+  height: 2rem;
+}
+
+.social-media-logo:hover {
+  filter: invert(1);
+}
+
+.btn-nav-mobile {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+.icon-nav-mobile {
+  height: 3rem;
+  width: 3rem;
+  color: #000;
+}
+
+.icon-nav-mobile[name="close-outline"] {
+  display: none;
+}
+
+/* *********************************************/
+/* HERO SECTION */
+/********************************************* */
+
+#hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(27, 34, 28, 0.6),
+      rgba(136, 171, 142, 0.1)
+    ),
+    url(../images/laptop.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding: 9.6rem 1.2rem;
+}
+
+.hero-text {
+  align-self: center;
+}
+
+.hero-heading {
+  color: #fff;
+  font-size: 4.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.hero-description {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* *********************************************/
+/* PORTFOLIO SECTION */
+/********************************************* */
+
+#portfolio {
+  background-color: #f2f1eb;
+  padding: 9.6rem 0;
+}
+
+.portfolio-heading {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #1b221c;
+}
+
+.portfolio-container {
+  gap: 2.4rem;
+}
+
+.project {
+  background-color: #88ab8e;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 1.2rem 1.2rem 2.4rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-2%);
+  box-shadow: 2.4rem 2.4rem 3.2rem rgba(0, 0, 0, 0.4);
+}
+
+.project-image {
+  width: 100%;
+  margin-bottom: 1.8rem;
+}
+
+.project-text {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.project-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #1b221c;
+  text-decoration: none;
+}
+
+.project-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #364439;
+}
+
+/* *********************************************/
+/* CONTACT SECTION */
+/********************************************* */
+
+#contact {
+  padding: 9.6rem 0;
+  background-color: #1b221c;
+}
+
+.contact-heading {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #94b399;
+}
+
+.cta-form {
+  gap: 2.4rem;
+  padding: 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: space-between;
+  background-color: #94b399;
+  border-radius: 9px;
+}
+
+.form-label {
+  display: block;
+  color: #092635;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.form-input {
+  width: 70%;
+  height: 4rem;
+  padding-left: 0.8rem;
+  border: none;
+  border-radius: 9px;
+}
+
+.cta-button {
+  width: 70%;
+  height: 4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  align-self: end;
+  border: none;
+  border-radius: 9px;
+  color: #94b399;
+  background-color: #1b221c;
+  cursor: pointer;
+}
+
+/* *********************************************/
+/* FOOTER SECTION */
+/********************************************* */
+
+#footer {
+  padding: 2.4rem 0 1.2rem 0;
+}
+
+.footer-text {
+  font-size: 1.4rem;
+  color: #777;
+  text-align: center;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aleem Salik</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header id="navbar" class="nav-open">
+      <div class="nav-logo">
+        <img class="logo" src="./images/filetype-js.svg" alt="logo" />
+      </div>
+      <div class="main-nav-links">
+        <ul class="nav-links">
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <ul class="social-media">
+          <li>
+            <a href="https://www.instagram.com/aleemsalik3/" target="_blank"
+              ><img
+                class="social-media-logo"
+                src="images/instagram.svg"
+                alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/Aleem-Salik" target="_blank"
+              ><img
+                class="social-media-logo"
+                src="images/github.svg"
+                alt="github"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.codewars.com/users/Aleem%20Salik"
+              target="_blank"
+              ><img
+                class="social-media-logo"
+                src="images/codewars.svg"
+                alt="codewars"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <button class="btn-nav-mobile">
+        <ion-icon class="icon-nav-mobile" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-nav-mobile" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container grid grid--2-cols">
+        <div class="hero-text">
+          <h1 class="hero-heading">
+            <span>&lt;h1&gt;</span> Hello World! <span>&lt;/h1&gt;</span>
+          </h1>
+          <p class="hero-description">
+            Explore my portfolio showcasing HTML, CSS, and JavaScript projects.
+            Discover my passion for web development through clean, interactive
+            designs that blend creativity with functionality.
+          </p>
+        </div>
+        <!-- <div>&nbsp;</div> -->
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2 class="portfolio-heading">Portfolio</h2>
+      <div class="portfolio-container container grid grid--3-cols">
+        <div class="project">
+          <a
+            href="https://aleem-salik.github.io/Guess-My-Number/"
+            target="_blank"
+            class="project-title"
+          >
+            <img
+              class="project-image"
+              src="./images/Guess-My-Number-.png"
+              alt="Guess My Number Game"
+            />
+          </a>
+          <div class="project-text">
+            <a
+              href="https://aleem-salik.github.io/Guess-My-Number/"
+              target="_blank"
+              class="project-title"
+              >Guess My Number</a
+            >
+            <p class="project-description">
+              Guess the number I'm thinking of! Test your luck and see if you
+              can beat the challenge.
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <a
+            href="https://aleem-salik.github.io/Pig-Game/"
+            target="_blank"
+            class="project-title"
+          >
+            <img
+              class="project-image"
+              src="./images/Pig-Game.png"
+              alt="Pig Game"
+            />
+          </a>
+          <div class="project-text">
+            <a
+              href="https://aleem-salik.github.io/Pig-Game/"
+              target="_blank"
+              class="project-title"
+              >Pig Game</a
+            >
+            <p class="project-description">
+              Pig Game: Roll the dice and race to reach 100 points first! Enjoy
+              this fun and competitive dice game now!
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <a
+            href="https://aleem-salik.github.io/mapty/"
+            target="_blank"
+            class="project-title"
+            ><img
+              class="project-image"
+              src="./images/mapty-Map-your-workouts.png"
+              alt="Bankist"
+          /></a>
+          <div class="project-text">
+            <a
+              href="https://aleem-salik.github.io/mapty/"
+              target="_blank"
+              class="project-title"
+              >Mapty</a
+            >
+            <p class="project-description">
+              Mapty is a fitness app that tracks running and cycling workouts,
+              helping users monitor their progress and achieve their goals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="contact-heading">Contact Me</h2>
+      <div class="container">
+        <form action="mailto:aleemsalik@gmail.com" class="cta-form">
+          <div>
+            <label class="form-label" for="name">Your Name</label>
+            <input
+              class="form-input"
+              id="name"
+              type="text"
+              placeholder="James"
+              required
+            />
+          </div>
+          <div>
+            <label class="form-label" for="number">Your Number</label>
+            <input
+              class="form-input"
+              id="number"
+              type="number"
+              placeholder="888-999-3344"
+              required
+            />
+          </div>
+          <div>
+            <label class="form-label" for="email">Your Email</label>
+            <input
+              class="form-input"
+              id="email"
+              type="email"
+              placeholder="example@chimp.com"
+              required
+            />
+          </div>
+          <button class="cta-button" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer id="footer">
+      <p class="footer-text">&copy; 2024 by Aleem Salik</p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
